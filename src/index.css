@@ -1,0 +1,793 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color-form-light);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root{
+  --background-color-form-dark: rgb(65, 67, 209);
+  --background-color-form-light: rgb(241, 241, 253);
+  --navbar-background-dark: rgb(65, 67, 209);
+  --navbar-background-light: rgb(241, 241, 253);
+  --navbar-background-hover: rgb(70, 70, 70);
+  --navbar-text: rgb(179, 190, 237);
+  --navbar-text-hover: white;
+  --label-color-form-light: white;
+  --label-color-form-dark: rgb(13, 13, 161);
+  --border-color-form-dark: rgb(13, 13, 161);
+  --border-color-form-light: rgb(168, 170, 253);
+  --label--form-text: darkblue;
+  --input--form-background: #f89475;
+  --input--form-textColor: black;
+  --input--form-fontSize: calc(12px + .5vw);
+  --input--form-height: calc(18px + 1vw);
+  --newUser--label-text: calc(10px + 1vw);
+  --messages--currentUser: rgb(141, 146, 141);
+  --messages--otherUser: rgb(255, 204, 169);
+  --section--title-headers: #e65b11;
+  --calendar--background-color: rgb(255, 149, 62);
+  --contact-backgroundTag: rgb(248, 100, 100);
+  --calendar-mine: rgb(233, 45, 45);
+}
+
+.none {
+  display: none;
+}
+
+.isBlurred {
+  filter: blur(10px)
+}
+
+.hide {
+  display: none
+}
+
+/* .navBarContainer {
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  width: 100%;
+  height: 37px;
+  flex-direction: row;
+  background-color: var(--navbar-background-dark);
+} */
+
+/* .navbarLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  padding: 1%;
+}
+
+.navbarRight {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 15px;
+  padding: 1%;
+}
+
+.navbarLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+} */
+
+/* .navbarLinkText {
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--navbar-text);
+}
+
+.navbarLinkText:hover {
+  color: var(--navbar-text-hover);
+}
+
+.navbarUserOptions {
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
+  padding-top: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--navbar-text);
+}
+
+.navbarUserOptions:hover {
+  color: var(--navbar-text-hover);
+} */
+
+/* .userOptionTextNavbar {
+  margin: 0px;
+  margin-bottom: 4%;
+}
+
+.userNavbarOptionsColumn {
+  display: flex;
+  flex-direction: column;
+  top: 7px;
+  position: absolute;
+  background-color: var(--navbar-background-dark);
+  border-radius: 4px;
+}
+
+.navbarProfilePic {
+  max-width: 25px;
+  max-height: 25px;
+  margin-right: 5px;
+} */
+
+/* .mainContainer {
+  width: 90%;
+  background-color: var(--background-color-form-light);
+  border: 2px solid var(--border-color-form-dark);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 5%;
+  padding: 2%;
+  padding-top: 0px;
+  min-height: 500px;
+} */
+
+/* .mainMapContainer {
+    width: 90%;
+    background-color: rgb(241, 241, 253);
+    background-color: rgb(241, 241, 253);
+    background-color: rgb(241, 241, 253);
+    background-color: var(--background-color-form-light);
+    border: 2px solid rgb(13, 13, 161);
+    border: 2px solid rgb(13, 13, 161);
+    border: 2px solid rgb(13, 13, 161);
+    border: 2px solid var(--border-color-form-dark);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 50px;
+    padding: 2%;
+    padding-top: 0px;
+    height: 88vh;
+  } */
+
+.titleLoginSection {
+  text-align: center;
+  color: var(--label-color-form-dark);
+  margin-top: 3%;
+}
+
+/* .titleSection {
+  text-align: center;
+  color: var(--label-color-form-dark);
+} */
+
+/* .optionsSection {
+  margin: 5%;
+  margin-top: 2%;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-top: 2px solid var(--background-color-form-dark);
+}
+
+.btnSetSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+} */
+
+.inputSection {
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainLoginInputLabel {
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-bottom: .5%;
+  padding-left: 1%;
+}
+
+.mainLoginInput {
+  width: 100%;
+  line-height: 1;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding-left: 2%;
+}
+
+.inputAlert {
+  color: red;
+  margin: 0px;
+  margin-left: 4%;
+}
+
+.hide {
+  display: none;
+}
+
+.cityStateZipSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.inputAddressSection {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.mainLoginInputAddressLabel {
+  padding-left: 2%;
+}
+
+.stateSelect {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+}
+
+.stateIdOpts {
+  font-weight: 500;
+}
+
+/* .searchByMenu {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgb(65, 67, 209);
+  background-color: var(--background-color-form-dark);
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 10px;
+  padding: .5%;
+}
+
+#searchBoxTitle {
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 19px;
+}
+
+.selectSearchLabel {
+  margin: 0px;
+  width: 94%;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid var(--background-color-form-dark);
+  background-color: var(--background-color-form-light);
+  color: var(--background-color-form-dark);
+  cursor: pointer;
+} */
+
+/* .searchInputAddress {
+  margin-top: 8px;
+  width: 80%;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+} */
+
+.selectSearchLabel:hover {
+  border: 2px solid var(--background-color-form-light);
+  background-color: var(--background-color-form-dark);
+  color: var(--background-color-form-light);
+}
+
+#selectOptionLabel {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 30%;
+  background-color: var(--background-color-form-dark);
+  color: var(--background-color-form-light);
+}
+
+.querySelect {
+  position: fixed;
+  width: 27%;
+  top: 182px;
+  background-color: var(--background-color-form-dark);
+}
+
+.querySelectOption {
+  font-weight: bold;
+  color: var(--background-color-form-light);
+}
+
+.userTitleMainCard {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 45px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* #GroupGuruAlertProfile {
+  position: fixed;
+  top: 0px;
+  width: 86%;
+  height: 680px;
+  margin-left: 5%;
+  margin-top: 10px;
+  display: flex;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  flex-direction: column;
+  text-align: center;
+  padding: 2px;
+} */
+
+/* #mainProfileEditTitle {
+  margin: 0px;
+  margin-bottom: 20px;
+  color: var(--background-color-form-dark);
+}
+
+.editProfileLabelName {
+  font-size: 15px;
+  margin: 0px;
+  margin-left: 5%;
+  font-weight: bold;
+  align-self: self-start;
+}
+
+.editProfileLabel {
+  font-size: 15px;
+  margin: 0px;
+  font-weight: bold;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  align-self: self-start;
+}
+
+.choosePhotoEdit {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.saveBackUpload {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+/* .editProfileInput {
+  width: 90%;
+  align-self: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+
+#photoUpload {
+  width: 58%;
+  padding-top: 5px;
+  display: flex;
+  align-self: center;
+}
+
+#namesEdit {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
+  justify-content: space-evenly;
+} */
+
+/* .choosePhotoBtn {
+  width: 38%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  color: rgb(65, 67, 209);
+  color: var(--background-color-form-dark);
+  border: 2px solid rgb(65, 67, 209);
+  border: 2px solid var(--background-color-form-dark);
+  cursor: pointer;
+}
+
+.choosePhotoBtn:hover {
+  background-color: var(--background-color-form-dark);
+  color: var(--background-color-form-light);
+  border: 2px solid var(--background-color-form-light);
+}
+
+.indivNameEdit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileMidSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+} */
+
+/* .profilePicEdit {
+  width: 40%;
+}
+
+.addressEditRight {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.editProfilePicImage {
+  width: 225px;
+  height: 225px;
+}
+
+.photoInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.editPhotoLabel {
+  font-size: 15px;
+  margin: 0px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */
+
+/* .rowContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.smallTextField {
+  margin-bottom: 4px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.stateSelectEdit {
+
+}
+
+.stateIdOptsEdit {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.editProfileCityStateZipSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.editAddressSection {
+  flex-direction: column;
+  display: flex;
+}
+
+.mainProfileInputAddressLabel {
+  font-weight: bold;
+  font-size: 15px;
+} */
+
+/* .editProfileLocationInput {
+  width: 70%;
+  margin-left: 10%;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.editProfileBtnSection {
+  margin-top: 0px;
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.addContactPicImage {
+  width: 175px;
+  height: 175px;
+} */
+
+#GroupGuruAlertLogin {
+  position: fixed;
+  top: 0px;
+  width: 86%;
+  height: 42vh;
+  margin-left: 5%;
+  margin-top: 5vh;
+  display: flex;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+  border: 3px solid var(--background-color-form-dark);
+}
+
+#errorMessage {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.errorTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.onlineStatus {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#featureLink {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+#userOptionLinks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+  background-color: var(--navbar-background-dark);
+  border-radius: 4px;
+  top: 34px;
+}
+
+/* .navbarFeatureOptions {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 5;
+  background-color: var(--navbar-background-dark);
+  border-radius: 4px;
+  top: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+
+.navbarFeatureOptionsText {
+  padding: 2px 10px;
+} */
+
+/* .mapPointer {
+  width: 48px;
+  padding-bottom: 24px;
+  transform: translate(-50%, -50%);
+}
+
+.loginActivityPin {
+  width: 48px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.onlineActivityPin {
+  width: 40px;
+  height: 40px;
+  border-radius: 21px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 3px solid var(--background-color-form-light);
+}
+
+.onlineActivityPin:hover {
+  border: 3px solid var(--background-color-form-dark);
+}
+
+#map {
+  height: 70vh;
+  width: 90%;
+  align-self: center;
+  border: 6px solid var(--background-color-form-dark);
+  border-radius: 9px;
+}
+
+#activityMap {
+  width: 50%;
+  height: 84vh;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#onlineMap {
+  width: 50%;
+  height: 84vh;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapsLabel {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: rgb(65, 67, 209);
+  color: var(--background-color-form-dark);
+  font-weight: bold;
+  margin: 0px;
+  padding-bottom: 2vh;
+}
+
+#loginMap {
+  height: 70vh;
+  width: 40%;
+  align-self: center;
+  border: 6px solid var(--background-color-form-dark);
+  border-radius: 9px;
+}
+
+#heatMap {
+  height: 70vh;
+  width: 40%;
+  align-self: center;
+  border: 6px solid var(--background-color-form-dark);
+  border-radius: 9px;
+}
+
+#GroupGuruLoginActivityProfile {
+  position: fixed;
+  top: 0px;
+  width: 80%;
+  height: 86vh;
+  margin-left: 7.5%;
+  margin-top: 5vh;
+  display: flex;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+  border: 3px solid var(--background-color-form-dark);
+}
+
+#mainProfileActivityTitle {
+  margin: 0px;
+  color: var(--background-color-form-dark);
+}
+
+.activityColumn {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  justify-content: space-evenly;
+}
+
+#mainActivityName {
+  margin: 0px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.activityData {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 1vh;
+}
+
+.activityPicImage {
+  height: 35vh;
+  border-radius:10px;
+}
+
+#LoginActivityList {
+  position: fixed;
+  top: 0px;
+  width: 80%;
+  height: 90vh;
+  margin-left: 7.5%;
+  margin-top: 2vh;
+  display: flex;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+  border: 3px solid var(--background-color-form-dark);
+}
+
+#loginActivityDiv {
+  height: 73vh;
+  border: 1px solid var(--background-color-form-dark);
+  overflow: scroll;
+  margin-bottom: 2vh;
+}
+
+.activityItem {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  padding-left: 2%;
+}
+
+#showLogins {
+  margin-top: 4vh;
+  width: 56%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: bold;
+  padding-top: 4px;
+  padding-bottom: 13px;
+  font-size: 16px;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  border: 2px solid rgb(65, 67, 209);
+  border: 2px solid var(--background-color-form-dark);
+  color: rgb(65, 67, 209);
+  color: var(--background-color-form-dark);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#showLogins:hover {
+  background-color: var(--background-color-form-dark);
+  border: 2px solid var(--background-color-form-light);
+  color: var(--background-color-form-light);
+} */

@@ -1,0 +1,204 @@
+@media screen and (max-width: 812px){
+  .navBarContainer {
+    display: flex;
+    position: fixed;
+    z-index: 6;
+    top: 0px;
+    width: 100%;
+    height: 37px;
+    flex-direction: row;
+    background-color: var(--navbar-background-dark);
+  }
+
+  .navbarLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    padding: 1%;
+  }
+
+  .navbarRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1%;
+  }
+
+  .navbarLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .navbarLinkText {
+    text-align: center;
+    font-weight: 900;
+    font-size: 15px;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--navbar-text);
+}
+
+  .navbarLinkText:hover {
+    color: var(--navbar-text-hover);
+  }
+
+  .navbarUserOptions {
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--navbar-text);
+  }
+
+  .navbarUserOptions:hover {
+    color: var(--navbar-text-hover);
+  }
+
+  .userOptionTextNavbar {
+    margin: 0px;
+    padding: 10px 27px;
+  }
+
+  .navbarFeatureOptions {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background-color: var(--navbar-background-dark);
+    border-radius: 4px;
+    top: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+
+  .navbarFeatureOptionsText {
+    padding: 10px 27px;
+  }
+
+  .userNavbarOptionsColumn {
+    display: flex;
+    flex-direction: column;
+    top: 7px;
+    position: absolute;
+    background-color: var(--navbar-background-dark);
+    border-radius: 4px;
+  }
+
+  .navbarProfilePic {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+@media screen and (min-width: 813px){
+  .navBarContainer {
+    display: flex;
+    position: fixed;
+    z-index: 6;
+    top: 0px;
+    width: 100%;
+    height: 37px;
+    flex-direction: row;
+    background-color: var(--navbar-background-dark);
+  }
+
+  .navbarLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    padding: 1%;
+  }
+
+  .navbarRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+    padding: 1%;
+  }
+
+  .navbarLink {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .navbarLinkText {
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--navbar-text);
+  }
+
+  .navbarLinkText:hover {
+    color: var(--navbar-text-hover);
+  }
+
+  .navbarUserOptions {
+    text-align: center;
+    font-weight: bold;
+    margin: 0px;
+    padding-top: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--navbar-text);
+  }
+
+  .navbarUserOptions:hover {
+    color: var(--navbar-text-hover);
+  }
+
+  .userOptionTextNavbar {
+    margin: 0px;
+    padding: 10px 27px;
+  }
+
+  .navbarFeatureOptions {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    background-color: var(--navbar-background-dark);
+    border-radius: 4px;
+    top: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+  }
+
+  .navbarFeatureOptionsText {
+    padding: 2px 10px;
+  }
+
+  .userNavbarOptionsColumn {
+    display: flex;
+    flex-direction: column;
+    top: 7px;
+    position: absolute;
+    background-color: var(--navbar-background-dark);
+    border-radius: 4px;
+  }
+
+  .navbarProfilePic {
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 5px;
+  }
+}

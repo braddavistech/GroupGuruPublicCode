@@ -1,0 +1,148 @@
+@media screen and (max-width: 812px){
+  .mainLoginContainer {
+  background-color: var(--background-color-form-light);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  height: calc(100vh - 50px);
+}
+
+.mainTitleSection {
+  text-align: center;
+  color: var(--label-color-form-dark);
+}
+
+#mainLoginIcon {
+  max-width: 26%;
+  max-height: 30vh;
+}
+
+.mainTitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 35px;
+}
+
+.ggTitle {
+  margin: 0px;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.optionsMainLoginSection {
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainBtnSetSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin-top: 5vh;
+}
+
+.mainLoginButtonLabels {
+  font-size: 25px;
+}
+
+.mainLoginButton {
+  margin-top: 2vh;
+  font-weight: 900;
+  width: 93%;
+  align-self: center;
+  font-size: 27px;
+  border-radius: 21px;
+  padding: 6px 0px;
+  border: 5px solid var(--border-color-form-dark);
+  background-color: var(--background-color-form-light);
+  color: var(--label-color-form-dark);
+  cursor: pointer;
+  box-shadow: 4px 8px #9c9c9c;
+}
+
+.mainLoginButton:hover {
+  border: 5px solid var(--border-color-form-light);
+  background-color: var(--background-color-form-dark);
+  color: var(--label-color-form-light);
+}
+}
+
+@media screen and (min-width: 813px) {
+.mainLoginContainer {
+  background-color: var(--background-color-form-light);
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.mainTitleSection {
+  text-align: center;
+  padding-top: 2vh;
+  color: var(--label-color-form-dark);
+}
+
+#mainLoginIcon {
+  max-width: 26%;
+}
+
+.mainTitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 35px;
+}
+
+.ggTitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.optionsMainLoginSection {
+  margin: 5%;
+  width: 90%;
+  margin-top: 2%;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.mainBtnSetSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.mainLoginButtonLabels {
+  font-size: 23px;
+}
+
+.mainLoginButton {
+  margin-top: 10px;
+  font-weight: bold;
+  width: 75%;
+  align-self: center;
+  font-size: 25px;
+  border-radius: 19px;
+  border: 4px solid var(--border-color-form-dark);
+  background-color: var(--background-color-form-light);
+  color: var(--label-color-form-dark);
+  cursor: pointer;
+
+}
+
+.mainLoginButton:hover {
+  box-shadow: 4px 8px #9c9c9c;
+  border: 4px solid var(--border-color-form-light);
+  background-color: var(--background-color-form-dark);
+  color: var(--label-color-form-light);
+}
+}

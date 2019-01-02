@@ -1,0 +1,688 @@
+@media screen and (max-width: 812px){
+  .mainMessageContainer {
+    background-color: var(--background-color-form-light);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 40px;
+    height: calc(100vh - 40px);
+  }
+
+  .hideNewMessage {
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--background-color-form-dark);
+    padding-top: 4px;
+    padding-left: 1%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--background-color-form-light);
+    border-top: 3px solid var(--background-color-form-dark);
+  }
+
+  .showNewMessage {
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--background-color-form-dark);
+    padding-top: 4px;
+    padding-left: 1%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--background-color-form-light);
+    border-top: 3px solid var(--background-color-form-dark);
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .messageExpandHide {
+    height: 19px;
+    margin-left: 9px;
+    padding-top: 4px;
+  }
+
+  .newMessageShowHide {
+    margin: 0px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--background-color-form-dark);
+  }
+
+  .mainMessageTitle {
+    margin: 0px;
+    padding-bottom: 4px;
+    font-size: 28px;
+    font-weight: 900;
+  }
+
+  .editMessageButton {
+    width: 20px;
+    height: 20px;
+    border-radius: 22px;
+    border: 2px solid white;
+    font-weight: bold;
+    margin-right: 1%;
+    cursor: pointer;
+  }
+
+  .editMessageButton:hover {
+    border: 2px solid var(--background-color-form-dark);
+  }
+
+  .newMessageInputSection {
+    margin-left: 2.5%;
+    font-size: 16px;
+    width: 95%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .newMessageInputLabel {
+    display: none;
+  }
+
+  .newMessageInput {
+    width: 100%;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2%;
+  }
+
+  .newMessageAlert {
+    color: red;
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .messageInputSection {
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0px;
+    /* padding-top: 6px;
+    border-top: 3px solid var(--background-color-form-dark);
+    background-color: var(--background-color-form-light); */
+  }
+
+  .saveIcon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+    border-radius: 41px;
+    border: 2px solid var(--background-color-form-dark);
+    padding: 0%;
+    cursor: pointer;
+  }
+
+  .messageProfilePic {
+    max-height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+
+  .addMessageBtnSection {
+    display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+  }
+
+  .oldMessagesWholeContainer {
+    border-bottom: 3px solid var(--background-color-form-dark);
+    border-top: 3px solid var(--background-color-form-dark);
+    margin-bottom: 30vh;
+  }
+
+  .oldMessagesWholeContainerFull {
+    overflow-y: scroll;
+    height: 79vh;
+    border-bottom: 3px solid var(--background-color-form-dark);
+    border-top: 3px solid var(--background-color-form-dark);
+  }
+
+  .indivMessage {
+    width: 96%;
+    padding: .4%;
+  }
+
+  .indivMessageOwner {
+    display: flex;
+    width: 90%;
+    margin-left: 10%;
+    background-color: rgb(250, 175, 175);
+    padding: 3px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .indivMessageOther {
+    display: flex;
+    width: 90%;
+    left: 0px;
+    background-color: rgb(126, 191, 248);
+    padding: 3px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: self-start;
+  }
+
+  .oldMsgInfoOwned {
+    margin: 0px;
+    margin-top: 3px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .oldMsgInfo {
+    margin: 0px;
+    margin-top: 3px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .oldMsgTitle {
+    width: 99%;
+    font-size: 14px;
+    font-weight: 900;
+    margin: 0px;
+    text-align: left;
+    text-decoration: underline;
+  }
+
+  .oldMsgTimeOwned {
+    margin: 0px;
+    width: 70%;
+    align-self: flex-end;
+    text-align: end;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .oldMsgTime {
+    margin: 0px;
+    width: 70%;
+    align-self: flex-start;
+    text-align: start;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .inlineRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .inlineRowOwned {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .oldMsgBody {
+    margin: 0px;
+    display: flex;
+    margin-left: 3px;
+    align-self: flex-start;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 3px;
+  }
+
+  #GroupGuruMessageAlert {
+    position: fixed;
+    top: 0px;
+    width: 86%;
+    height: 600px;
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
+    background-color: var(--background-color-form-light);
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+  }
+
+  #mainEditTitle {
+    padding-bottom: 2%;
+    font-weight: bold;
+    font-size: 36px;
+    border-bottom: 3px solid var(--background-color-form-dark);
+  }
+
+  #editMessageInputDiv {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+  }
+
+  .editInputLabel {
+    margin: 0px;
+    font-size: 26px;
+    align-self: self-start;
+    font-weight: bold;
+  }
+
+  .editMessageInput {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .editMessageTextarea {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 18px;
+    height: 80px;
+    line-height: 1.5;
+  }
+
+  #editBtnSection {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .editConfirmation {
+    width: 75px;
+    height: 75px;
+    border-radius: 41px;
+    padding: 0%;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (min-width: 813px){
+  .mainMessageContainer {
+    width: 95%;
+    background-color: var(--background-color-form-light);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    padding: 2%;
+    padding-top: 0px;
+    height: 88vh;
+  }
+
+  .hideNewMessage {
+    display: flex;
+    flex-direction: row;
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--background-color-form-dark);
+    padding-top: 4px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1vh;
+    justify-content: center;
+    width: 95%;
+  }
+
+  .showNewMessage {
+    margin-left: 2.5%;
+    width: 95%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    /* cursor: pointer; */
+  }
+
+  .messageExpandHide {
+    height: 21px;
+    margin-left: 9px;
+    padding-top: 3px;
+  }
+
+  .newMessageShowHide {
+    margin: 0px;
+    padding-top: 2px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+width:auto;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--background-color-form-dark);
+    cursor: pointer;
+  }
+
+  .newMessageShowHide:hover {
+    box-shadow: 4px 8px #9c9c9c;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .editMessageButton {
+    width: 35px;
+    height: 35px;
+    border-radius: 22px;
+    min-width: 35px;
+    border: 2px solid white;
+    font-weight: bold;
+    margin-right: 1%;
+    cursor: pointer;
+  }
+
+  .editMessageButton:hover {
+    border: 2px solid var(--background-color-form-dark);
+  }
+
+  .newMessageInputSection {
+    margin-left: 2.5%;
+    width: 95%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .newMessageInputLabel {
+    width: 15%;
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 4px;
+    padding-left: 1%;
+  }
+
+  .newMessageInput {
+    width: 100%;
+    line-height: 1;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2%;
+  }
+
+  .newMessageAlert {
+    color: red;
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .mainMessageTitle {
+    margin: 0px;
+    padding-bottom: 4px;
+    font-size: 28px;
+  }
+
+  .messageInputSection {
+    width: 100%;
+    bottom: 0px;
+  }
+
+  .saveIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 41px;
+    border: 4px solid var(--border-color-form-light);
+    padding: 0%;
+    cursor: pointer;
+  }
+
+  .saveIcon:hover {
+    border: 4px solid var(--background-color-form-dark);
+  }
+
+  .messageProfilePic {
+    max-width: 45px;
+    max-height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+  }
+
+  .addMessageBtnSection {
+    display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+  }
+
+  .oldMessagesWholeContainer {
+    overflow-y: scroll;
+    height: 60vh;
+    border-radius: 5px;
+    border: 3px solid var(--background-color-form-dark);
+  }
+
+  .oldMessagesWholeContainerFull {
+    overflow-y: scroll;
+    height: 79vh;
+    border-radius: 5px;
+    border: 3px solid var(--background-color-form-dark);
+  }
+
+  .indivMessage {
+    width: 96%;
+    padding: .4%;
+  }
+
+  .indivMessageOwner {
+    display: flex;
+    width: 80%;
+    margin-left: 20%;
+    background-color: rgb(250, 175, 175);
+    padding: 3px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .indivMessageOther {
+    display: flex;
+    width: 80%;
+    left: 0px;
+    background-color: rgb(126, 191, 248);
+    padding: 3px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: self-start;
+  }
+
+  .oldMsgInfoOwned {
+    margin: 0px;
+    margin-top: 3px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .oldMsgInfo {
+    margin: 0px;
+    margin-top: 3px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .oldMsgTitle {
+    width: 96%;
+    font-size: 17px;
+    font-weight: 900;
+    margin: 0px;
+    text-decoration: underline;
+  }
+
+  .oldMsgTimeOwned {
+    margin: 0px;
+    width: 70%;
+    align-self: flex-end;
+    text-align: end;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .oldMsgTime {
+    margin: 0px;
+    width: 70%;
+    align-self: flex-start;
+    text-align: start;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 15px;
+  }
+
+  .inlineRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .inlineRowOwned {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .oldMsgBody {
+    margin: 0px;
+    display: flex;
+    margin-left: 3px;
+    align-self: flex-start;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 18px;
+  }
+
+  #GroupGuruMessageAlert {
+    position: fixed;
+    top: 0px;
+    width: 86%;
+    height: 600px;
+    margin-left: 5%;
+    margin-top: 2%;
+    display: flex;
+    background-color: var(--background-color-form-light);
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+  }
+
+  #mainEditTitle {
+    padding-bottom: 2%;
+    font-weight: bold;
+    font-size: 36px;
+    border-bottom: 3px solid var(--background-color-form-dark);
+  }
+
+  #editMessageInputDiv {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 5%;
+  }
+
+  .editInputLabel {
+    margin: 0px;
+    font-size: 26px;
+    align-self: self-start;
+    font-weight: bold;
+  }
+
+  .editMessageInput {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .editMessageTextarea {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 18px;
+    height: 80px;
+    line-height: 1.5;
+  }
+
+  #editBtnSection {
+    margin-top: 3%;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .editConfirmation {
+    width: 75px;
+    height: 75px;
+    border-radius: 41px;
+    padding: 0%;
+    cursor: pointer;
+    border: 5px solid var(--background-color-form-light);
+    background-color: white;
+  }
+
+  .editConfirmation:hover {
+    border: 5px solid var(--background-color-form-dark);
+    box-shadow: 4px 8px #9c9c9c;
+  }
+}

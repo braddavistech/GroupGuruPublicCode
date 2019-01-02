@@ -1,0 +1,224 @@
+@media screen and (max-width: 812px){
+  #existingLoginIcon {
+    max-width: 20%;
+    max-height: 11vh;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.none {
+  display: none;
+}
+
+.mainUserContainer {
+  background-color: var(--background-color-form-light);
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  height: calc(100vh - 40px);
+}
+
+.userTitleSection {
+  text-align: center;
+  color: var(--label-color-form-dark);
+}
+
+.userMainTitle {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 35px;
+  display: inline-flex;
+  line-height: 1.0;
+  vertical-align: middle;
+}
+
+.ggTitle {
+  margin: 0px;
+  font-size: 45px;
+  font-weight: 900;
+  line-height: .95;
+}
+
+.userInputSection {
+  margin-left: 5%;
+  width: 90%;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.userMainLoginInputLabel {
+  width: 100%;
+  display: flex;
+  font-weight: 900;
+  font-size: 18px;
+  padding-bottom: 2px;
+  padding-left: 1%;
+}
+
+.userMainLoginInput {
+  width: 100%;
+  line-height: 1;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.userOptionsSection {
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.userBtnSetSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 1vh;
+}
+
+.userMainLoginButtonLabels {
+  font-size: 23px;
+}
+
+.userMainLoginButton {
+  margin-top: .5vh;
+  font-weight: 900;
+  height: 13vh;
+  width: 82%;
+  align-self: center;
+  font-size: 25px;
+  border-radius: 26px;
+  border: 4px solid var(--border-color-form-dark);
+  background-color: var(--background-color-form-light);
+  color: var(--label-color-form-dark);
+  cursor: pointer;
+  box-shadow: 4px 8px #9c9c9c;
+}
+
+.inputAlert {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+.userMainLoginButton:hover {
+  border: 4px solid var(--border-color-form-light);
+  background-color: var(--background-color-form-dark);
+  color: var(--label-color-form-light);
+}
+}
+
+@media screen and (min-width: 813px){
+  #existingLoginIcon {
+    max-width: 26%;
+    max-height: 30vh;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .mainUserContainer {
+    width: 90%;
+    background-color: var(--background-color-form-light);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px;
+    padding: 2%;
+    padding-top: 0px;
+  }
+
+  .userTitleSection {
+    text-align: center;
+    color: var(--label-color-form-dark);
+  }
+
+  .userMainTitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 35px;
+  }
+
+  .ggTitle {
+    margin: 0px;
+    font-size: 45px;
+    font-weight: 900;
+  }
+
+  .userInputSection {
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .userMainLoginInputLabel {
+    width: 100%;
+    display: flex;
+    font-weight: 900;
+    font-size: 18px;
+    padding-bottom: .5%;
+    padding-left: .5%;
+  }
+
+  .userMainLoginInput {
+    width: 100%;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .userOptionsSection {
+    margin: 2%;
+    margin-top: 1vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .userBtnSetSection {
+  text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .userMainLoginButtonLabels {
+    font-size: 23px;
+  }
+
+  .userMainLoginButton {
+    margin-top: 10px;
+    font-weight: 900;
+    width: 60%;
+    align-self: center;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 5px solid var(--border-color-form-dark);
+    background-color: var(--background-color-form-light);
+    color: var(--label-color-form-dark);
+    cursor: pointer;
+  }
+
+  .userMainLoginButton:hover {
+    border: 5px solid var(--border-color-form-light);
+    background-color: var(--background-color-form-dark);
+    color: var(--label-color-form-light);
+    box-shadow: 4px 8px #9c9c9c;
+  }
+
+  .inputAlert {
+    color: red;
+    margin: 0px;
+    margin-left: 4%;
+  }
+}

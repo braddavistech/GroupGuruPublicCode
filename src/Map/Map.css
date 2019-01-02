@@ -1,0 +1,401 @@
+@media screen and (max-width: 812px){
+  .mainMapContainer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .userPicSheet {
+  max-width: 12%;
+  max-height: 10vh;
+  border-radius: 5px;
+}
+
+.mapPointer {
+  width: 48px;
+  padding-bottom: 24px;
+  transform: translate(-50%, -50%);
+}
+
+.loginActivityPin {
+  width: 48px;
+  padding-bottom: 10px;
+  padding-left: 22px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.onlineActivityPin {
+  width: 40px;
+  height: 40px;
+  border-radius: 21px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 3px solid var(--background-color-form-light);
+}
+
+.onlineActivityPin:hover {
+  border: 3px solid var(--background-color-form-dark);
+}
+
+#map {
+  height: 70vh;
+  width: 90%;
+  position: relative;
+  align-self: center;
+  border: 6px solid var(--background-color-form-dark);
+  border-radius: 9px;
+}
+
+#activityMap {
+  width: 99%;
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#onlineMap {
+  width: 99%;
+  position: relative;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.mapsLabel {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: var(--background-color-form-dark);
+  font-weight: 900;
+  font-size: 22px;
+  margin: 0px;
+  padding-bottom: 2vh;
+}
+
+#loginMap {
+  height: 70vh;
+  width: 40%;
+  align-self: center;
+  border: 6px solid var(--background-color-form-dark);
+  border-radius: 9px;
+}
+
+#heatMap {
+  height: 70vh;
+  width: 40%;
+  align-self: center;
+  border: 6px solid var(--background-color-form-dark);
+  border-radius: 9px;
+}
+
+#GroupGuruLoginActivityProfile {
+  position: fixed;
+  top: 0px;
+  width: 80%;
+  height: 86vh;
+  margin-left: 7.5%;
+  margin-top: 5vh;
+  display: flex;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+  border: 3px solid var(--background-color-form-dark);
+}
+
+#mainProfileActivityTitle {
+  margin: 0px;
+  color: var(--background-color-form-dark);
+}
+
+.activityColumn {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0px;
+  justify-content: space-evenly;
+}
+
+#mainActivityName {
+  margin: 0px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.activityData {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 1vh;
+}
+
+.activityPicImage {
+  height: 35vh;
+  border-radius:10px;
+}
+
+#LoginActivityList {
+  position: fixed;
+  top: 0px;
+  width: 80%;
+  height: 90vh;
+  margin-left: 7.5%;
+  margin-top: 2vh;
+  display: flex;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+  border: 3px solid var(--background-color-form-dark);
+}
+
+#loginActivityDiv {
+  height: 73vh;
+  border: 1px solid var(--background-color-form-dark);
+  overflow: scroll;
+  margin-bottom: 2vh;
+}
+
+.activityItem {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  padding-left: 2%;
+}
+
+#showLogins {
+  margin-top: 4vh;
+  width: 80%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-weight: 900;
+  padding: 5px 2px;
+  font-size: 19px;
+  background-color: rgb(241, 241, 253);
+  background-color: var(--background-color-form-light);
+  border: 2px solid rgb(65, 67, 209);
+  border: 5px solid var(--background-color-form-dark);
+  color: rgb(65, 67, 209);
+  color: var(--background-color-form-dark);
+  border-radius: 23px;
+  cursor: pointer;
+  box-shadow: 4px 8px #9c9c9c;
+}
+
+#showLogins:hover {
+  background-color: var(--background-color-form-dark);
+  border: 5px solid var(--border-color-form-light);
+  color: var(--background-color-form-light);
+}
+}
+
+@media screen and (min-width: 813px){
+  .mainMapContainer {
+    width: 99%;
+    background-color: var(--background-color-form-light);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 0px;
+    height: 88vh;
+  }
+
+  .userPicSheet {
+    max-width: 12%;
+    max-height: 10vh;
+    border-radius: 5px;
+  }
+
+  .mapPointer {
+    width: 48px;
+    padding-bottom: 24px;
+    transform: translate(-50%, -50%);
+  }
+
+  .loginActivityPin {
+    width: 48px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .onlineActivityPin {
+    width: 40px;
+    height: 40px;
+    border-radius: 21px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 3px solid var(--background-color-form-light);
+  }
+
+  .onlineActivityPin:hover {
+    border: 3px solid var(--background-color-form-dark);
+  }
+
+  #map {
+    height: 70vh;
+    width: 90%;
+    align-self: center;
+    border: 6px solid var(--background-color-form-dark);
+    border-radius: 9px;
+  }
+
+  #activityMap {
+    width: 50%;
+    height: 84vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #onlineMap {
+    width: 50%;
+    height: 84vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mapsLabel {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(65, 67, 209);
+    color: var(--background-color-form-dark);
+    font-weight: bold;
+    margin: 0px;
+    padding-bottom: 5vh;
+  }
+
+  #loginMap {
+    height: 70vh;
+    width: 40%;
+    align-self: center;
+    border: 6px solid var(--background-color-form-dark);
+    border-radius: 9px;
+  }
+
+  #heatMap {
+    height: 70vh;
+    width: 40%;
+    align-self: center;
+    border: 6px solid var(--background-color-form-dark);
+    border-radius: 9px;
+  }
+
+  #GroupGuruLoginActivityProfile {
+    position: fixed;
+    top: 0px;
+    width: 80%;
+    height: 86vh;
+    margin-left: 7.5%;
+    margin-top: 5vh;
+    display: flex;
+    background-color: rgb(241, 241, 253);
+    background-color: var(--background-color-form-light);
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+    border: 3px solid var(--background-color-form-dark);
+  }
+
+  #mainProfileActivityTitle {
+    margin: 0px;
+    color: var(--background-color-form-dark);
+  }
+
+  .activityColumn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    justify-content: space-evenly;
+  }
+
+  #mainActivityName {
+    margin: 0px;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .activityData {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 1vh;
+  }
+
+  .activityPicImage {
+    height: 35vh;
+    border-radius:10px;
+  }
+
+  #LoginActivityList {
+    position: fixed;
+    top: 0px;
+    width: 80%;
+    height: 90vh;
+    margin-left: 7.5%;
+    margin-top: 2vh;
+    display: flex;
+    background-color: rgb(241, 241, 253);
+    background-color: var(--background-color-form-light);
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+    border: 3px solid var(--background-color-form-dark);
+  }
+
+  #loginActivityDiv {
+    height: 73vh;
+    border: 1px solid var(--background-color-form-dark);
+    overflow: scroll;
+    margin-bottom: 2vh;
+  }
+
+  .activityItem {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    padding-left: 2%;
+  }
+
+  #showLogins {
+    margin-top: 4vh;
+    width: 56%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 21px;
+    font-size: 16px;
+    background-color: var(--background-color-form-light);
+    border: 5px solid var(--background-color-form-dark);
+    color: rgb(65, 67, 209);
+    color: var(--background-color-form-dark);
+    border-radius: 5px;
+    cursor: pointer;
+
+  }
+
+  #showLogins:hover {
+    background-color: var(--background-color-form-dark);
+    border: 5px solid var(--border-color-form-light);
+    color: var(--background-color-form-light);
+    box-shadow: 4px 8px #9c9c9c;
+  }
+}
